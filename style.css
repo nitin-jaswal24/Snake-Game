@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+h1{
+    background-color:rgb(132, 132, 7);
+    
+}
+.container{
+    background: url('./img/snakez.jpg')  ;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+
+    /* object-fit: cover; */
+    
+    /* background-size: cover; */
+}
+
+.board{
+    width: 600px;
+    border: 2px solid black;
+    border-style: dotted;
+    opacity: 80%;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+    height: 500px;
+    background: linear-gradient(olive,olivedrab);
+
+}
+
+.head{
+    background-color: white;
+
+}
+.snake{
+    background-color: red;
+    border: 0.25vmin solid white;
+    border-radius: 12px;
+}
+.food{
+background-color: purple;
+border-radius: 12px;
+}
+
+
+#scoreBox{
+    font-size: 2rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+@media screen and (max-width:835px) {
+    .board{
+        width: 400px;
+        height: 500px;
+        background-size: 100vh 100vw;
+
+    }
+    
+    
+}
